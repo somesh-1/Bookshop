@@ -67,6 +67,12 @@ const CheckoutForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="checkout-form">
+      <label htmlFor="checkout-name">name</label>
+      <input
+          id="checkout-name"
+          type="text"
+          onChange={(e) => setOrderDetails({ ...orderDetails, name: e.target.value })}
+        />
         <label htmlFor="checkout-address">Shipping Address</label>
         <input
           id="checkout-address"

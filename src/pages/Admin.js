@@ -110,7 +110,7 @@ const Admin = () => {
                                 <p><label>Featured?</label>
                                     <input type="checkbox"
                                         className="featured-checkbox"
-                                        checked={bookDetails.featured}
+                                        checked={!!bookDetails.featured}
                                         onChange={() => setBookDetails({ ...bookDetails, featured: !bookDetails.featured })}
                                     />
                                 </p>
